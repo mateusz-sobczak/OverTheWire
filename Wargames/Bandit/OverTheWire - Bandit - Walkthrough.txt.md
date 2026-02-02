@@ -71,10 +71,26 @@ Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ### Bandit 4
 Official Tips: [Bandit4](https://overthewire.org/wargames/bandit/bandit4.html)
 
-
+In this level we have 2 new concepts directories and hidden files. As before use the 'ls' command to see what files are available than use the 'cd' command to navigate to the available directory. To see the hidden file you will have to use the '-a' flag with the 'ls' command. In Linux hidden files are displayed with a fullstops at the beginning of the name.
 
 ```
+ls
+cd inhere
+ls -a
+cat ./...Hiding-From-You
 ```
+
+Now use the password to login to Bandit 4.
+
+```
+exit
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+```
+
+References:
+[cd](https://man7.org/linux/man-pages/man1/cd.1p.html)
+
 ### Bandit 5
 Official Tips: [Bandit5](https://overthewire.org/wargames/bandit/bandit5.html)
 
@@ -82,6 +98,8 @@ Official Tips: [Bandit5](https://overthewire.org/wargames/bandit/bandit5.html)
 
 ```
 ```
+
+Now use the password to login to Bandit 3.
 ### Bandit 6
 Official Tips: [Bandit6](https://overthewire.org/wargames/bandit/bandit6.html)
 
