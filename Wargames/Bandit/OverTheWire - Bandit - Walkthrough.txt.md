@@ -38,6 +38,7 @@ After logging in perform the 'ls' command, you can see file name '-'. The passwo
 
 This level is same as level 1, the difficulty here is the hyphen name, if we would do 'cat -' the command line would assume it's a flag and it's part of the command rather then the file to display. To open the file you need to put in the exact path to the file.
 ```
+ls
 cat ./-
 ```
 
