@@ -23,7 +23,7 @@ To log out of the current ssh session execute 'exit'. This will log you out and 
 
 ```
 exit
-ssh bandit1@bandit.labs.overthewire.org -p 2220
+ssh bandit2@bandit.labs.overthewire.org -p 2220
 Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
 
@@ -46,26 +46,27 @@ Now use the password to login to Bandit 3.
 
 ```
 exit
-ssh bandit1@bandit.labs.overthewire.org -p 2220
+ssh bandit3@bandit.labs.overthewire.org -p 2220
 Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
 
 ### Bandit 3
 Official Tips: [Bandit3](https://overthewire.org/wargames/bandit/bandit3.html)
 
-This level is also the same as level 1 & 2 only difference here is the file has spaces in the name. To open the file you can use bash tab completion or type out the name, to open a file with spaces you need to escape the spaces using a '\'.
+This level is also the same as level 1 & 2 only difference here is the file has spaces in the name. To open the file you can use a full path i.e.: './' and bash tab completion or type out the name, to open a file with spaces you need to escape the spaces using a '\'.
 
 ```
 ls
 cat ./--spaces\ in\ this\ filename--
 ```
 
+Now use the password to login to Bandit 4.
+
 ```
 exit
-ssh bandit1@bandit.labs.overthewire.org -p 2220
+ssh bandit4@bandit.labs.overthewire.org -p 2220
 Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```
-
 
 ### Bandit 4
 Official Tips: [Bandit4](https://overthewire.org/wargames/bandit/bandit4.html)
