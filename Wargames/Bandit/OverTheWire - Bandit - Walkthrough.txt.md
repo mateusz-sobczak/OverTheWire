@@ -156,21 +156,25 @@ References:
 ### Bandit 7
 Official Tips: [Bandit7](https://overthewire.org/wargames/bandit/bandit7.html)
 
-[Explain]
+The 1st step to this one is to take a look at the official tips. Says the file is located somewhere on the server. The best and easiest way is to use the 'find' command. Other tips say the file is owned by bandit7 and group bandit6, and size 33 bytes.
 
+Using the flags '-user', '-group' and '-size' we can narrow down the files but unfortunately we get a lot of "Permission denied" errors, we can use '2>/dev/null' to redirect the stderr to the void, which should give us just one file.
 ```
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
 ```
 
-Now use the password to login to Bandit 6.
+Now use the password to login to Bandit 7.
 
 ```
 exit
-ssh bandit6@bandit.labs.overthewire.org -p 2220
-Password: 
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj 
 ```
 
 References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
+[find](https://man7.org/linux/man-pages/man1/find.1.html)
+[stderr](https://askubuntu.com/questions/350208/what-does-2-dev-null-mean)
 
 ### Bandit 7
 Official Tips: [Bandit7](https://overthewire.org/wargames/bandit/bandit7.html)
