@@ -60,7 +60,7 @@ ls
 cat ./--spaces\ in\ this\ filename--
 ```
 
-Now use the password to login to Bandit 4.
+Now use the password to login to Bandit 3.
 
 ```
 exit
@@ -70,6 +70,20 @@ Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ### Bandit 4
 Official Tips: [Bandit4](https://overthewire.org/wargames/bandit/bandit4.html)
+
+
+
+```
+```
+### Bandit 5
+Official Tips: [Bandit5](https://overthewire.org/wargames/bandit/bandit5.html)
+
+
+
+```
+```
+### Bandit 6
+Official Tips: [Bandit6](https://overthewire.org/wargames/bandit/bandit6.html)
 
 
 
