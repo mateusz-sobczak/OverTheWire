@@ -122,13 +122,13 @@ References:
 ### Bandit 6
 Official Tips: [Bandit6](https://overthewire.org/wargames/bandit/bandit6.html)
 
-Do the routine... Once you enter the 'inhere' directory and execute the 'ls' command you will see there are tones of files. If you run 'ls -l' you can see that all of the are directories. The password is probably hiding somewhere in one of them.
+Do the routine... Once you enter the 'inhere' directory and execute the 'ls' command you will see there are tones of files. If you run 'ls -l' you can see that all of them are directories. The password is probably hiding somewhere in one of them.
 
 Using another useful flag with 'ls' command, we can list all of the files in each of the directories in one go 'ls -laR'. This gives us tones of files. None that we can straight away see as having the password in them. Looking at the official tips we can see the file we are looking for is of size 1033 bytes.
 
 We can use this to our advantage with the grep command. 1st we need to execute the 'ls -laR' command the pipe the output to grep command to filter out what we are looking for. 'ls -laR | grep 1033' this will give us just one file '.file2'.
 
-Assuming this is the right file we need to find now in which directory is it located in. Unfortunately we cannot see that from the output we are given, we can go back to the 'ls -lR' output and look through each '.file2' for the 1033 size and than see which directory was it in. Or we can edit our grep filter to include the directories too. 'ls -laR | grep -i -e .file2 -e maybehere -e 1033'. For handiness also include the right size.
+Assuming this is the right file we need to find now in which directory is it located in. Unfortunately we cannot see that from the output we are given, we can go back to the 'ls -laR' output and look through each '.file2' for the 1033 size and than see which directory was it in. Or we can edit our grep filter to include the directories too. 'ls -laR | grep -i -e .file2 -e maybehere -e 1033'. For handiness also include the right size.
 
 ```
 ls 
@@ -153,20 +153,39 @@ Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 References:
 [grep](https://man7.org/linux/man-pages/man1/grep.1.html)
 
-### Bandit 6
-Official Tips: [Bandit6](https://overthewire.org/wargames/bandit/bandit6.html)
+### Bandit 7
+Official Tips: [Bandit7](https://overthewire.org/wargames/bandit/bandit7.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 5.
+Now use the password to login to Bandit 6.
 
 ```
 exit
-ssh bandit5@bandit.labs.overthewire.org -p 2220
-Password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 7
+Official Tips: [Bandit7](https://overthewire.org/wargames/bandit/bandit7.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 6.
+
+```
+exit
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+Password: 
 ```
 
 References:
