@@ -52,5 +52,25 @@ Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
 ### Bandit 3
 Official Tips: [Bandit3](https://overthewire.org/wargames/bandit/bandit3.html)
+
+This level is also the same as level 1 & 2 only difference here is the file has spaces in the name. To open the file you can use bash tab completion or type out the name, to open a file with spaces you need to escape the spaces using a '\'.
+
+```
+ls
+cat ./--spaces\ in\ this\ filename--
+```
+
+```
+exit
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+```
+
+
+### Bandit 4
+Official Tips: [Bandit4](https://overthewire.org/wargames/bandit/bandit4.html)
+
+
+
 ```
 ```
