@@ -23,7 +23,7 @@ To log out of the current ssh session execute 'exit'. This will log you out and 
 
 ```
 exit
-ssh bandit2@bandit.labs.overthewire.org -p 2220
+ssh bandit1@bandit.labs.overthewire.org -p 2220
 Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
 
@@ -46,7 +46,7 @@ Now use the password to login to Bandit 3.
 
 ```
 exit
-ssh bandit3@bandit.labs.overthewire.org -p 2220
+ssh bandit2@bandit.labs.overthewire.org -p 2220
 Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
 
@@ -64,7 +64,7 @@ Now use the password to login to Bandit 4.
 
 ```
 exit
-ssh bandit4@bandit.labs.overthewire.org -p 2220
+ssh bandit3@bandit.labs.overthewire.org -p 2220
 Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```
 
