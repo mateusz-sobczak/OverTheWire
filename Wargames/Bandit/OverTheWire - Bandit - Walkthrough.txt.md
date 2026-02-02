@@ -22,6 +22,7 @@ cat ./readme
 To log out of the current ssh session execute 'exit'. This will log you out and end the ssh session. Use the same ssh command to login to 'Bandit1' account as for 'Bandit0'. Remember to update the user. And copy over the password from the 'readme' file.
 
 ```
+exit
 ssh bandit1@bandit.labs.overthewire.org -p 2220
 Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
@@ -31,11 +32,23 @@ References:
 [cat](https://man7.org/linux/man-pages/man1/cat.1.html)
 
 ### Bandit 2
-Official Tips: [Bandit2](https://overthewire.org/wargames/bandit/bandit2.html)
+Official Tips: [Bandit1](https://overthewire.org/wargames/bandit/bandit2.html)
 
-After logging in 
+After logging in perform the 'ls' command, you can see file name '-'. The password is in that file...
+
+This level is straight forward, the difficulty here is the hyphen name, if we would do 'cat -' the command line would assume it's a flag and it's part of the command rather then the file to display. To open the file you need to put in the exact path to the file.
 ```
+cat ./-
 ```
+
+Now use the password to login to Bandit 3.
+
+```
+exit
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+```
+
 ### Bandit 3
 Official Tips: [Bandit3](https://overthewire.org/wargames/bandit/bandit3.html)
 ```
