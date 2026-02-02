@@ -176,19 +176,38 @@ References:
 [find](https://man7.org/linux/man-pages/man1/find.1.html)
 [stderr](https://askubuntu.com/questions/350208/what-does-2-dev-null-mean)
 
-### Bandit 7
-Official Tips: [Bandit7](https://overthewire.org/wargames/bandit/bandit7.html)
+### Bandit 8
+Official Tips: [Bandit8](https://overthewire.org/wargames/bandit/bandit8.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 6.
+Now use the password to login to Bandit 8.
 
 ```
 exit
-ssh bandit6@bandit.labs.overthewire.org -p 2220
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 9
+Official Tips: [Bandit9](https://overthewire.org/wargames/bandit/bandit9.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 9.
+
+```
+exit
+ssh bandit9@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
