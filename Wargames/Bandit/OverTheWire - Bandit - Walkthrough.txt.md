@@ -19,15 +19,22 @@ ls
 cat ./readme
 ```
 
+To log out of the current ssh session execute 'exit'. This will log you out and end the ssh session. Use the same ssh command to login to 'Bandit1' account as for 'Bandit0'. Remember to update the user. And copy over the password from the 'readme' file.
+
+```
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+```
+
 References:
 [ls](https://man7.org/linux/man-pages/man1/ls.1.html)
 [cat](https://man7.org/linux/man-pages/man1/cat.1.html)
 
 ### Bandit 2
 Official Tips: [Bandit2](https://overthewire.org/wargames/bandit/bandit2.html)
+
+After logging in 
 ```
-ssh bandit1@bandit.labs.overthewire.org -p 2220
-Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
 ### Bandit 3
 Official Tips: [Bandit3](https://overthewire.org/wargames/bandit/bandit3.html)
