@@ -13,7 +13,7 @@ Password: bandit0
 ### Bandit 1
 Official Tips: [Bandit1](https://overthewire.org/wargames/bandit/bandit1.html)
 
-This level is pretty straight forward as one of the very 1st commands when login into a new system is to perform the 'ls' command, as part of the enumeration of the file system. Once we run 'ls' command we can see a file names 'readme'. To see the fine we can execute cat command. There we can see the password to get to the next level.
+This level is pretty straight forward as one of the very 1st commands when login into a new system is to perform the 'ls' command, as part of the enumeration of the file system. Once we run 'ls' command we can see a file names 'readme'. To see the fine we can execute 'cat' command. There we can see the password to get to the next level.
 ```
 ls
 cat ./readme
