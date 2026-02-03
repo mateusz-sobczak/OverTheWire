@@ -392,8 +392,8 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 17
-[_Bandit]:17
-Official Tips: [Bandit\[_Bandit\]](https://overthewire.org/wargames/bandit/bandit[_Bandit].html)
+[_Bandit]: 17
+Official Tips: [Bandit17]](https://overthewire.org/wargames/bandit/bandit17.html)
 
 [Explain]
 
