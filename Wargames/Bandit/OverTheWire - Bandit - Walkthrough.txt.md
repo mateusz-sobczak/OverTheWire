@@ -400,7 +400,7 @@ Official Tips: [Bandit\[_Bandit\]](https://overthewire.org/wargames/bandit/bandi
 ```
 ```
 
-Now use the password to login to Bandit [Bandit].
+Now use the password to login to Bandit (Bandit).
 
 ```
 exit
