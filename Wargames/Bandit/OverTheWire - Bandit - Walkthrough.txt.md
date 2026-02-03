@@ -1,6 +1,6 @@
 ## Over The Wire Walkthrough - Bandit
 
-- [Bandit 0](#Bandit 0)
+- [Bandit 0](#Bandit-0)
 - [Bandit 1](#Bandit 1)
 - [Bandit 2](#Bandit 2)
 - [Bandit 3](#Bandit 3)
