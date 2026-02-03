@@ -196,10 +196,10 @@ Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ### Bandit 9
 Official Tips: [Bandit9](https://overthewire.org/wargames/bandit/bandit9.html)
 
-This one is the same as bandit 8, the only difference we need to find a line that occurs only ones. To do this we will need to use 'cat' instead of grep, so we could pipe the output to a uniq command, which will identify the unique entries in the file. For unique to work we first need to sort the output of cat before it becomes an input for uniq command.
+This one is the same as bandit 8, the only difference we need to find a line that occurs only once. To do this we will need to use 'cat' instead of 'grep', so we could pipe the output to a 'uniq' command, which will identify the unique entries in the file. For unique to work we first need to 'sort' the output of cat before it becomes an input for 'uniq' command.
 
 ```
-cat data.txt | sort | uniq -u
+cat ./data.txt | sort | uniq -u
 ```
 
 Now use the password to login to Bandit 9.
@@ -217,9 +217,16 @@ References:
 ### Bandit 10
 Official Tips: [Bandit10](https://overthewire.org/wargames/bandit/bandit10.html)
 
-[Explain]
+Looking at the official tips it looks like all we need to do is to find human readable text inside of the 'data.txt' file. Using 'cat' and 'file' commands on the file shows us that this is a binary looking file. There are few ways we can solve this level, the easiest is by using 'strings' command. The tip also says there are a few '=' characters before the password.
 
 ```
+strings ./data.txt | grep ===
+```
+
+Other way would be to use the 'cat' command and again use grep to find the line with '===' in it. This is a bit more tricky as grep would trow and error as the output of cat is not a text, looking at the man page we can see we can use '-a' flag to treat the input as text. This output is not as clean as the strings way but still works.
+
+```
+cat ./data.txt | grep -a ===
 ```
 
 Now use the password to login to Bandit 10.
@@ -227,18 +234,19 @@ Now use the password to login to Bandit 10.
 ```
 exit
 ssh bandit10@bandit.labs.overthewire.org -p 2220
-Password: 
+Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey 
 ```
 
 References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
+[strings](https://man7.org/linux/man-pages/man1/strings.1.html)
 
 ### Bandit 11
 Official Tips: [Bandit11](https://overthewire.org/wargames/bandit/bandit11.html)
 
-[Explain]
+The tip says the password is base64 encoded... Doing 'cat' on the file shows that it in fact is base64 encoded so all we need to do is decode it.
 
 ```
+cat ./data.txt | base64 -d
 ```
 
 Now use the password to login to Bandit 11.
@@ -246,6 +254,44 @@ Now use the password to login to Bandit 11.
 ```
 exit
 ssh bandit11@bandit.labs.overthewire.org -p 2220
+Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+```
+
+References:
+[base64](https://man7.org/linux/man-pages/man1/base64.1.html)
+
+### Bandit 12
+Official Tips: [Bandit12](https://overthewire.org/wargames/bandit/bandit12.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 12.
+
+```
+exit
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 13
+Official Tips: [Bandit13](https://overthewire.org/wargames/bandit/bandit13.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 13.
+
+```
+exit
+ssh bandit13@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
