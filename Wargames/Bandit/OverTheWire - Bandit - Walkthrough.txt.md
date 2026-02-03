@@ -353,7 +353,7 @@ Password:
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
-### Bandit 15
+### Bandit 15[TODO]
 Official Tips: [Bandit15](https://overthewire.org/wargames/bandit/bandit15.html)
 
 [Explain]
@@ -372,7 +372,7 @@ Password:
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
-### Bandit 16
+### Bandit 16[TODO]
 Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
 
 [Explain]
@@ -391,22 +391,3 @@ Password:
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
-### Bandit 17
-[id]: "17"
-Official Tips: [Bandit17]](https://overthewire.org/wargames/bandit/bandit17.html)
-
-[Explain]
-
-```
-```
-
-Now use the password to login to Bandit [id].
-
-```
-exit
-ssh bandit13@bandit.labs.overthewire.org -p 2220
-Password: 
-```
-
-References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
