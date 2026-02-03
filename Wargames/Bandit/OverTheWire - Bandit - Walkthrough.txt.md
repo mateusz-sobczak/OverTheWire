@@ -393,7 +393,7 @@ References:
 
 ### Bandit 17
 [_Bandit]:17
-Official Tips: [Bandit[_Bandit]](https://overthewire.org/wargames/bandit/bandit[_Bandit].html)
+Official Tips: [Bandit\[_Bandit\]](https://overthewire.org/wargames/bandit/bandit[_Bandit].html)
 
 [Explain]
 
