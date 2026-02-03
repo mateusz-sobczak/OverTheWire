@@ -1,5 +1,17 @@
 ## Over The Wire Walkthrough - Bandit
 
+[Bandit 0](#Bandit 0)
+[Bandit 1](#Bandit 1)
+[Bandit 2](#Bandit 2)
+[Bandit 3](#Bandit 3)
+[Bandit 4](#Bandit 4)
+[Bandit 5](#Bandit 5)
+[Bandit 6](#Bandit 6)
+[Bandit 7](#Bandit 7)
+[Bandit 8](#Bandit 8)
+[Bandit 9](#Bandit 9)
+[Bandit 10](#Bandit 10)
+
 ### Bandit 0
 
 Official Tips: [Bandit0](https://overthewire.org/wargames/bandit/bandit0.html)
