@@ -392,7 +392,7 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 17
-[id]: 17
+[id]: "17"
 Official Tips: [Bandit17]](https://overthewire.org/wargames/bandit/bandit17.html)
 
 [Explain]
