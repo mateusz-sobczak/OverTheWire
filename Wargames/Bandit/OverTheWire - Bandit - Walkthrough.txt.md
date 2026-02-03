@@ -179,9 +179,10 @@ References:
 ### Bandit 8
 Official Tips: [Bandit8](https://overthewire.org/wargames/bandit/bandit8.html)
 
-[Explain]
+This level is quite simple as all we have to do it find the line with 'millionth' in the data.txt file.
 
 ```
+grep millionth data.txt
 ```
 
 Now use the password to login to Bandit 8.
@@ -189,18 +190,16 @@ Now use the password to login to Bandit 8.
 ```
 exit
 ssh bandit8@bandit.labs.overthewire.org -p 2220
-Password: 
+Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ```
-
-References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 9
 Official Tips: [Bandit9](https://overthewire.org/wargames/bandit/bandit9.html)
 
-[Explain]
+This one is the same as bandit 8, the only difference we need to find a line that occurs only ones. To do this we will need to use 'cat' instead of grep, so we could pipe the output to a uniq command, which will identify the unique entries in the file. For unique to work we first need to sort the output of cat before it becomes an input for uniq command.
 
 ```
+cat data.txt | sort | uniq -u
 ```
 
 Now use the password to login to Bandit 9.
@@ -208,6 +207,45 @@ Now use the password to login to Bandit 9.
 ```
 exit
 ssh bandit9@bandit.labs.overthewire.org -p 2220
+Password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+```
+
+References:
+[sort](https://man7.org/linux/man-pages/man1/sort.1.html)
+[uniq](https://man7.org/linux/man-pages/man1/uniq.1.html)
+
+### Bandit 10
+Official Tips: [Bandit10](https://overthewire.org/wargames/bandit/bandit10.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 10.
+
+```
+exit
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 11
+Official Tips: [Bandit11](https://overthewire.org/wargames/bandit/bandit11.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 11.
+
+```
+exit
+ssh bandit11@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
