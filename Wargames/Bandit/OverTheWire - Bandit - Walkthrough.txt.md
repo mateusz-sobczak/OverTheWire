@@ -296,7 +296,7 @@ Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 References:
 [base64](https://man7.org/linux/man-pages/man1/base64.1.html)
 
-### Bandit 12
+### Bandit 12 [TODO]
 Official Tips: [Bandit12](https://overthewire.org/wargames/bandit/bandit12.html)
 
 [Explain]
@@ -315,7 +315,7 @@ Password:
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
-### Bandit 13
+### Bandit 13 [TODO]
 Official Tips: [Bandit13](https://overthewire.org/wargames/bandit/bandit13.html)
 
 [Explain]
@@ -334,7 +334,7 @@ Password:
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
-### Bandit 14
+### Bandit 14 [TODO]
 Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
 
 [Explain]
@@ -353,7 +353,7 @@ Password:
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
-### Bandit 15[TODO]
+### Bandit 15 [TODO]
 Official Tips: [Bandit15](https://overthewire.org/wargames/bandit/bandit15.html)
 
 [Explain]
@@ -372,7 +372,311 @@ Password:
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
-### Bandit 16[TODO]
+### Bandit 16 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 17 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 18 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 19 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 21 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 22 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 23 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 24 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 25 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 26 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 27 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 28 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 29 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 30 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 31 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 32 [TODO]
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 33 [TODO]
 Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
 
 [Explain]
