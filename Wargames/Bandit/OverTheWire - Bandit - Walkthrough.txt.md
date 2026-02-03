@@ -15,6 +15,26 @@
 - [Bandit 11](#Bandit-11)
 - [Bandit 12](#Bandit-12)
 - [Bandit 13](#Bandit-13)
+- [Bandit 14](#Bandit-14)
+- [Bandit 15](#Bandit-15)
+- [Bandit 16](#Bandit-16)
+- [Bandit 17](#Bandit-17)
+- [Bandit 18](#Bandit-18)
+- [Bandit 19](#Bandit-19)
+- [Bandit 20](#Bandit-20)
+- [Bandit 21](#Bandit-21)
+- [Bandit 22](#Bandit-22)
+- [Bandit 23](#Bandit-23)
+- [Bandit 24](#Bandit-24)
+- [Bandit 25](#Bandit-25)
+- [Bandit 26](#Bandit-26)
+- [Bandit 27](#Bandit-27)
+- [Bandit 28](#Bandit-28)
+- [Bandit 29](#Bandit-29)
+- [Bandit 30](#Bandit-30)
+- [Bandit 31](#Bandit-31)
+- [Bandit 32](#Bandit-32)
+- [Bandit 33](#Bandit-33)
 
 ### Bandit 0
 
@@ -297,6 +317,83 @@ References:
 
 ### Bandit 13
 Official Tips: [Bandit13](https://overthewire.org/wargames/bandit/bandit13.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 13.
+
+```
+exit
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 14
+Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 14.
+
+```
+exit
+ssh bandit14@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 15
+Official Tips: [Bandit15](https://overthewire.org/wargames/bandit/bandit15.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 15.
+
+```
+exit
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 16
+Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 16.
+
+```
+exit
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 17
+[_Bandit]=17
+Official Tips: [Bandit[_Bandit]](https://overthewire.org/wargames/bandit/bandit[_Bandit].html)
 
 [Explain]
 
