@@ -349,7 +349,7 @@ What we end up with is the 'data' file. Now the tips told us this is a multi com
 
 ```
 mv data data.bz2
-bzip2 -d data
+bzip2 -d data.bz2
 ```
 
 
