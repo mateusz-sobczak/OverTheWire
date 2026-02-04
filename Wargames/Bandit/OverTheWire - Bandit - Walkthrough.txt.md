@@ -328,11 +328,24 @@ References:
 ### Bandit 13 [TODO]
 Official Tips: [Bandit13](https://overthewire.org/wargames/bandit/bandit13.html)
 
-[Explain]
+This is a fun but confusing exercise there are multiple layers to this puzzle, the tips tell us the file is a hexdump of a file compressed multiple times. They tell use to use a temporary working space too. Let's start by getting our working space setup. We can achieve this with a few useful commands and tricks to do in a nice and neat one-liner.
 
+```
+cd $(mktemp -d) && cp ~/data.txt .
+```
+
+This command while it might look confusing is straight forward, we can read it like a math problem from left to right and whats in the brackets gets done first. Firstly bash executes 'mktemp' command which will create us a temporary directory in the '/tmp/' folder, than it will change directory to the folder, it could be done individually but to save us time typing out the random name of the directory we can use the '$()' or put the command in backticks (both will achieve the same result), which will substitute the directory substitute for us. Once we are in the directory we can copy over the working file from bandit12's home directory.
+
+Now we can start looking at what we are working with. 
+
+The tips told us the file is a hex dump. Executing the `cat data.txt` will show that it is in fact a hex file. Looking at the output of 'cat' we can see that the file starts with '1f8b 0808' doing a google search shows us this is a gzip'd file. Trying to uncompress it with 'gzip' will not work as currently this is just a text file we need to convert it back into a data file. We can do it with a 'xxd' command. Than we can uncompress it with 'gzip'.
 ```
 xxd -r data.txt data.gz
 gzip -d data.gz
+
+
+
+```
 bzip2 -d data
 tar xvf data5.bin
 ```
@@ -347,6 +360,10 @@ Password:
 
 References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
+[mktemp](https://man7.org/linux/man-pages/man1/mktemp.1.html)
+[cp](https://man7.org/linux/man-pages/man1/cp.1.html)
+[Backticks & &()](https://www.redhat.com/en/blog/backtick-operator-vs-parens)
+
 
 ### Bandit 14 [TODO]
 Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
