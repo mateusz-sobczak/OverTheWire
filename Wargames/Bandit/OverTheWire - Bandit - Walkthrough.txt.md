@@ -339,14 +339,22 @@ This command while it might look confusing is straight forward, we can read it l
 Now we can start looking at what we are working with. 
 
 The tips told us the file is a hex dump. Executing the `cat data.txt` will show that it is in fact a hex file. Looking at the output of 'cat' we can see that the file starts with '1f8b 0808' doing a google search shows us this is a gzip'd file. Trying to uncompress it with 'gzip' will not work as currently this is just a text file we need to convert it back into a data file. We can do it with a 'xxd' command. Then we can uncompress it with 'gzip'.
+
 ```
 xxd -r data.txt data.gz
 gzip -d data.gz
 ```
 
+What we end up with is the 'data' file. Now the tips told us this is a multi compressed file. So lets have a look what else we need to do. As this is now a data file the 'cat' command will not help us out a lot, but we can still use 'xxd'. Execute `xxd data`. Looking at the bytes '425a 6839' and doing a google search, shows us this is a bzip2 file. Let's rename it to a proper extension, and uncompress.
 
 ```
+mv data data.bz2
 bzip2 -d data
+```
+
+
+
+```
 tar xvf data5.bin
 ```
 
@@ -363,7 +371,8 @@ References:
 [mktemp](https://man7.org/linux/man-pages/man1/mktemp.1.html)
 [cp](https://man7.org/linux/man-pages/man1/cp.1.html)
 [Backticks & &()](https://www.redhat.com/en/blog/backtick-operator-vs-parens)
-
+[xxd](https://man7.org/linux/man-pages/man1/hexdump.1.html)
+[mv](https://man7.org/linux/man-pages/man1/mv.1.html)
 
 ### Bandit 14 [TODO]
 Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
