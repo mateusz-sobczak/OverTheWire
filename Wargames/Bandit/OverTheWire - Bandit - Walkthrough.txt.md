@@ -296,14 +296,14 @@ Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 References:
 [base64](https://man7.org/linux/man-pages/man1/base64.1.html)
 
-### Bandit 12 [TODO]
+### Bandit 12
 Official Tips: [Bandit12](https://overthewire.org/wargames/bandit/bandit12.html)
 
 The official tips say all the letters in 'data.txt' have been moved by 13 characters. Doing a 'cat' on the file, shows us it's in the same format as the decoded password for level 11: "The password is xxx". So we know the 'G' needs to be a 'T'. Outside of decoding the password manually the tips gives a tool named 'tr' checking out man pages, we can see the tool allows us to translate or swap characters for different ones, this level is interesting cause I didn't know of a 'tr' command before. 
 
 The 'tr' command at the most basic level takes 2 arguments the character set the msg is in and a character set to translate it to, meaning if we would do 'tr [A-Z] [a-z]' this would make all the upper case characters to lowercase. We can also do shift patterns, 'tr [G] [T]' would translate all 'G' characters to 'T'. Now we need to build a character set.
 
-We can use python one liners to find the exact letters without having to manually count out what A+13 is `python3 -c "print(chr(ord('A') +13))"`. This tells us that 'A' becomes 'N', as letter before 'N' is 'M' so this would make '[A-M] [N]'. Now we need to find what 'M' would translate to. Using the exact same python script but replacing the 'A' with 'M' gives us 'Z'
+We can use python one-liners to find the exact letters without having to manually count out what A+13 is `python3 -c "print(chr(ord('A') +13))"`. This tells us that 'A' becomes 'N', as letter before 'N' is 'M' so this would make '[A-M] [N]'. Now we need to find what 'M' would translate to. Using the exact same python script but replacing the 'A' with 'M' gives us 'Z'
 
 Now we need to translate N-Z, we can assume as there are 26 characters in the alphabet and 13 is the halfway point, 'A'  &rarr; 'N' and 'M' &rarr; 'Z' it would be the reverse 'N' &rarr; 'A' and 'Z' &rarr; 'M'.
 
