@@ -331,6 +331,10 @@ Official Tips: [Bandit13](https://overthewire.org/wargames/bandit/bandit13.html)
 [Explain]
 
 ```
+xxd -r data.txt data.gz
+gzip -d data.gz
+bzip2 -d data
+tar xvf data5.bin
 ```
 
 Now use the password to login to Bandit 13.
