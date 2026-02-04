@@ -334,15 +334,15 @@ This is a fun but confusing exercise there are multiple layers to this puzzle, t
 cd $(mktemp -d) && cp ~/data.txt .
 ```
 
-This command while it might look confusing is straight forward, we can read it like a math problem from left to right and whats in the brackets gets done first. Firstly bash executes 'mktemp' command which will create us a temporary directory in the '/tmp/' folder, than it will change directory to the folder, it could be done individually but to save us time typing out the random name of the directory we can use the '$()' or put the command in backticks (both will achieve the same result), which will substitute the directory substitute for us. Once we are in the directory we can copy over the working file from bandit12's home directory.
+This command while it might look confusing is straight forward, we can read it like a math problem from left to right and what's in the brackets get's done first. Firstly bash executes 'mktemp -d' command which will create us a temporary directory in the '/tmp/' folder, than it will change directory to the folder, it could be done individually but to save us time typing out the random name of the directory we can use the '$()' or put the command in backticks (both will achieve the same result), which will substitute the directory for us. Once we are in the directory we can copy over the working file from bandit12's home directory.
 
 Now we can start looking at what we are working with. 
 
-The tips told us the file is a hex dump. Executing the `cat data.txt` will show that it is in fact a hex file. Looking at the output of 'cat' we can see that the file starts with '1f8b 0808' doing a google search shows us this is a gzip'd file. Trying to uncompress it with 'gzip' will not work as currently this is just a text file we need to convert it back into a data file. We can do it with a 'xxd' command. Than we can uncompress it with 'gzip'.
+The tips told us the file is a hex dump. Executing the `cat data.txt` will show that it is in fact a hex file. Looking at the output of 'cat' we can see that the file starts with '1f8b 0808' doing a google search shows us this is a gzip'd file. Trying to uncompress it with 'gzip' will not work as currently this is just a text file we need to convert it back into a data file. We can do it with a 'xxd' command. Then we can uncompress it with 'gzip'.
 ```
 xxd -r data.txt data.gz
 gzip -d data.gz
-
+```
 
 
 ```
