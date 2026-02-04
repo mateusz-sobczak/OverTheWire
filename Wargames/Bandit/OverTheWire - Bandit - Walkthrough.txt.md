@@ -358,8 +358,16 @@ As before we end up with a 'data' file. Let's have a look at it again with 'xxd'
 mv data data.gz
 gzip -d data.gz
 ```
+
+Now the new 'data' file that we got is different, it's much bigger than the previous ones when viewed with 'xxd', let's pipe the output to 'head' command to see just the first 10 lines. `xxd data | head` instead just to see the 1st few lines. With a quick google search we can see this is a tar archive, we can see this by the null padding. Let's unarchive this, with the `tar data` command. This gives us 'data5.bin' file, running the 'xxd' & 'head' command again, will show us it's another tar archive... `tar xf data5.bin` gives us 'data6.bin', which again is a bzip2 compressed file. There is nothing new in this level so keep unarchiving and decompressing till you get to the password.
+
 ```
-tar xvf data5.bin
+mv data6.bin data6.bz2
+bzip2 -d data6.bz2
+tar xf data6
+mv data8.bin data8.gz
+gzip -d data8.gz
+cat data8
 ```
 
 Now use the password to login to Bandit 13.
@@ -367,16 +375,17 @@ Now use the password to login to Bandit 13.
 ```
 exit
 ssh bandit13@bandit.labs.overthewire.org -p 2220
-Password: 
+Password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 ```
 
 References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
 [mktemp](https://man7.org/linux/man-pages/man1/mktemp.1.html)
 [cp](https://man7.org/linux/man-pages/man1/cp.1.html)
 [Backticks & &()](https://www.redhat.com/en/blog/backtick-operator-vs-parens)
 [xxd](https://man7.org/linux/man-pages/man1/hexdump.1.html)
 [mv](https://man7.org/linux/man-pages/man1/mv.1.html)
+[tar](https://man7.org/linux/man-pages/man1/tar.1.html)
+[head](https://man7.org/linux/man-pages/man1/head.1.html)
 
 ### Bandit 14 [TODO]
 Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
