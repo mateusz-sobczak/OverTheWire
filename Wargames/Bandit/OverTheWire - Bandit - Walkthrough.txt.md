@@ -352,8 +352,12 @@ mv data data.bz2
 bzip2 -d data.bz2
 ```
 
+As before we end up with a 'data' file. Let's have a look at it again with 'xxd'. Again the same bytes '1f8b 0808'. Let's rename to '.gz' and uncompress.
 
-
+```
+mv data data.gz
+gzip -d data.gz
+```
 ```
 tar xvf data5.bin
 ```
