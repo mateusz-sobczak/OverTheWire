@@ -325,7 +325,7 @@ References:
 [tr](https://man7.org/linux/man-pages/man1/tr.1.html)
 [Python CMD](https://docs.python.org/3/using/cmdline.html#cmdoption-c)
 
-### Bandit 13 [TODO]
+### Bandit 13
 Official Tips: [Bandit13](https://overthewire.org/wargames/bandit/bandit13.html)
 
 This is a fun but confusing exercise there are multiple layers to this puzzle, the tips tell us the file is a hexdump of a file compressed multiple times. They tell use to use a temporary working space too. Let's start by getting our working space setup. We can achieve this with a few useful commands and tricks to do in a nice and neat one-liner.
@@ -445,18 +445,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 17 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit17](https://overthewire.org/wargames/bandit/bandit17.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 17.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit17@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -464,18 +464,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 18 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit18](https://overthewire.org/wargames/bandit/bandit18.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 18.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit18@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -483,18 +483,37 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 19 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit19](https://overthewire.org/wargames/bandit/bandit19.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 19.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+Password: 
+```
+
+References:
+[file](https://man7.org/linux/man-pages/man1/file.1.html)
+
+### Bandit 20 [TODO]
+Official Tips: [Bandit20](https://overthewire.org/wargames/bandit/bandit20.html)
+
+[Explain]
+
+```
+```
+
+Now use the password to login to Bandit 20.
+
+```
+exit
+ssh bandit20@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -502,18 +521,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 21 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit21](https://overthewire.org/wargames/bandit/bandit21.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 21.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit21@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -521,18 +540,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 22 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit22](https://overthewire.org/wargames/bandit/bandit22.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 22.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit22@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -540,18 +559,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 23 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit23](https://overthewire.org/wargames/bandit/bandit23.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 23.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit23@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -559,18 +578,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 24 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit24](https://overthewire.org/wargames/bandit/bandit24.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 24.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit24@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -578,18 +597,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 25 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit25](https://overthewire.org/wargames/bandit/bandit25.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 25.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit25@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
@@ -597,18 +616,18 @@ References:
 [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ### Bandit 26 [TODO]
-Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
+Official Tips: [Bandit26](https://overthewire.org/wargames/bandit/bandit26.html)
 
 [Explain]
 
 ```
 ```
 
-Now use the password to login to Bandit 16.
+Now use the password to login to Bandit 26.
 
 ```
 exit
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+ssh bandit26@bandit.labs.overthewire.org -p 2220
 Password: 
 ```
 
