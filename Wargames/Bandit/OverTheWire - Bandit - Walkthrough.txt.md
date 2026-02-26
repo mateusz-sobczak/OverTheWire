@@ -390,21 +390,23 @@ References:
 ### Bandit 14 [TODO]
 Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
 
-[Explain]
+This level is relatively simple, after login in to Bandit 13 and doing enumeration of the user directory we can see a file called 'sshkey.private'. Checking the file out with 'cat' we can see that it is a private key file has to start with '-----BEGIN RSA PRIVATE KEY-----'. A private key is part of asymmetric cryptography and is used for decryption, it can also be used for authentication with SSH. Having a look at the official tips we can see this key is used to login to Bandit 14. As localhost ssh sessions are blocked on the host we have to copy over the file to our local machine and than use it to login to next level. We can copy over the file with secure copy 'scp'.
 
 ```
+scp -P 2220 bandit13@bandit.labs.overthewire.org:~/sshkey.private ./sshkey.private
 ```
 
 Now use the password to login to Bandit 14.
 
 ```
 exit
-ssh bandit14@bandit.labs.overthewire.org -p 2220
-Password: 
+ssh bandit14@bandit.labs.overthewire.org -p 2220 -i ./sshkey.private
 ```
 
 References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
+[scp](https://man7.org/linux/man-pages/man1/scp.1.html)
+[scp examples](https://linuxblog.io/linux-securely-copy-files-using-scp/)
+[Symmetric and Asymmetric Key Encryption](https://www.geeksforgeeks.org/computer-networks/difference-between-symmetric-and-asymmetric-key-encryption/)
 
 ### Bandit 15 [TODO]
 Official Tips: [Bandit15](https://overthewire.org/wargames/bandit/bandit15.html)
