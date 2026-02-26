@@ -387,7 +387,7 @@ References:
 [tar](https://man7.org/linux/man-pages/man1/tar.1.html)
 [head](https://man7.org/linux/man-pages/man1/head.1.html)
 
-### Bandit 14 [TODO]
+### Bandit 14
 Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
 
 This level is relatively simple, after login in to Bandit 13 and doing enumeration of the user directory we can see a file called 'sshkey.private'. Checking the file out with 'cat' we can see that it is a private key file has to start with '-----BEGIN RSA PRIVATE KEY-----'. A private key is part of asymmetric cryptography and is used for decryption, it can also be used for authentication with SSH. Having a look at the official tips we can see this key is used to login to Bandit 14. As localhost ssh sessions are blocked on the host we have to copy over the file to our local machine and than use it to login to next level. We can copy over the file with secure copy 'scp'.
