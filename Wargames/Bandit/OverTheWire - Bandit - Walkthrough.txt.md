@@ -432,12 +432,21 @@ References:
 [telnet](https://man7.org/linux/man-pages/man1/telnet-probe.1.html)
 [nc](https://en.wikipedia.org/wiki/Netcat)
 
-### Bandit 16 [TODO]
+### Bandit 16
 Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
 
-[Explain]
+This level is very similar to last only we have to use port 30001, and the communication has to happen over SSL/TLS, in previous level 'telnet' or 'nc' used a clear text connection meaning the communication was not encrypted. In this level we have to encrypt the connection, we can accomplish this with number of tools but on this system the easies is to use the 'openssl' command with the 's-client' option.
+
+Once the connection is established pasted in the password from previous level and hit enter.
 
 ```
+openssl s_client localhost:30001
+```
+
+For a quick equivalent of a one liner of the 'nc' command you can use this:
+
+```
+openssl s_client -connect localhost:30001 -quiet < /etc/bandit_pass/bandit15
 ```
 
 Now use the password to login to Bandit 16.
@@ -445,11 +454,11 @@ Now use the password to login to Bandit 16.
 ```
 exit
 ssh bandit16@bandit.labs.overthewire.org -p 2220
-Password: 
+Password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 ```
 
 References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
+[openssl](https://docs.openssl.org/3.3/man1/)
 
 ### Bandit 17 [TODO]
 Official Tips: [Bandit17](https://overthewire.org/wargames/bandit/bandit17.html)
