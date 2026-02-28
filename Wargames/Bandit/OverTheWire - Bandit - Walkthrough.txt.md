@@ -463,6 +463,7 @@ Password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 
 References:
 [openssl](https://docs.openssl.org/3.3/man1/)
+[ncat](https://nmap.org/ncat/guide/ncat-ssl.html)
 
 ### Bandit 17 [TODO]
 Official Tips: [Bandit17](https://overthewire.org/wargames/bandit/bandit17.html)
