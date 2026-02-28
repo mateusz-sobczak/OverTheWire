@@ -435,9 +435,9 @@ References:
 ### Bandit 16
 Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
 
-This level is very similar to last only we have to use port 30001, and the communication has to happen over SSL/TLS, in previous level 'telnet' or 'nc' used a clear text connection meaning the communication was not encrypted. In this level we have to encrypt the connection, we can accomplish this with number of tools but on this system the easies is to use the 'openssl' command with the 's-client' option.
+This level is very similar to last one only we have to use port 30001, and the communication has to happen over SSL/TLS, in previous level 'telnet' or 'nc' used a clear text connection meaning the communication was not encrypted. In this level we have to encrypt the connection, we can accomplish this with number of tools but on this system the easiest is to use the 'openssl' command with the 's_client' option.
 
-Once the connection is established pasted in the password from previous level and hit enter.
+Once the connection is established, paste in the password from previous level and hit enter.
 
 ```
 openssl s_client localhost:30001
@@ -447,6 +447,10 @@ For a quick equivalent of a one liner of the 'nc' command you can use this:
 
 ```
 openssl s_client -connect localhost:30001 -quiet < /etc/bandit_pass/bandit15
+
+OR
+
+ncat --ssl localhost 30001 < /etc/bandit_pass/bandit15
 ```
 
 Now use the password to login to Bandit 16.
