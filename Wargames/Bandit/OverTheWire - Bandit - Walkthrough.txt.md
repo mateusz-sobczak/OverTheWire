@@ -390,7 +390,9 @@ References:
 ### Bandit 14
 Official Tips: [Bandit14](https://overthewire.org/wargames/bandit/bandit14.html)
 
-This level is relatively simple, after login in to Bandit 13 and doing enumeration of the user directory we can see a file called 'sshkey.private'. Checking the file out with 'cat' we can see that it is a private key, file has to start with '-----BEGIN RSA PRIVATE KEY-----'. A private key is part of asymmetric cryptography and is used for decryption, it can also be used for authentication with SSH. Having a look at the official tips we can see this key is used to login to Bandit 14. As localhost ssh sessions are blocked on the host we have to copy over the file to our local machine and than use it to login to next level. We can copy over the file with secure copy 'scp'.
+This level is relatively simple, after login in to Bandit 13 and doing enumeration of the user directory we can see a file called 'sshkey.private'. Checking the file out with 'cat' we can see that it is a private key, file has to start with '-----BEGIN RSA PRIVATE KEY-----'. A private key is part of asymmetric cryptography and is used for decryption, it can also be used for authentication with SSH. Having a look at the official tips we can see this key is used to login to Bandit 14 and we need to get to '/etc/bandit_pass/bandit14'. As localhost ssh sessions are blocked on the host we have to copy over the file to our local machine and than use it to login to next level. We can copy over the file with secure copy 'scp'.
+
+Remember to 'cat' a copy of the /etc/bandit_pass/bandit14, you'll need it in next level!
 
 ```
 scp -P 2220 bandit13@bandit.labs.overthewire.org:~/sshkey.private ./sshkey.private
@@ -408,12 +410,13 @@ References:
 [scp examples](https://linuxblog.io/linux-securely-copy-files-using-scp/)
 [Symmetric and Asymmetric Key Encryption](https://www.geeksforgeeks.org/computer-networks/difference-between-symmetric-and-asymmetric-key-encryption/)
 
-### Bandit 15 [TODO]
+### Bandit 15
 Official Tips: [Bandit15](https://overthewire.org/wargames/bandit/bandit15.html)
 
-[Explain]
+This level is about probing ports on the system, the official tips tell us we need to use the password from level 14 and send it to port 30000 on the localhost. The password can be found in the '/etc/bandit_pass/bandit14'. To interact with the port 30000 we can use a tool like telnet, this is a very simple clear text protocol for interacting with a remote server. What we can do is 'telnet localhost 30000' or 'telnet 127.0.0.1 30000', google the difference between localhost and 127.0.0.1 if you don't know ;P. Once we are connected to the port we can type out the password or copy and paste. If you don't wanna type it out, there is also another command we can use called netcat, and user '<' to feed the file to the port.
 
 ```
+nc localhost 30000 < /etc/bandit_pass/bandit14
 ```
 
 Now use the password to login to Bandit 15.
@@ -421,11 +424,13 @@ Now use the password to login to Bandit 15.
 ```
 exit
 ssh bandit15@bandit.labs.overthewire.org -p 2220
-Password: 
+Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 ```
 
 References:
-[file](https://man7.org/linux/man-pages/man1/file.1.html)
+[localhost](https://en.wikipedia.org/wiki/Localhost)
+[telnet](https://man7.org/linux/man-pages/man1/telnet-probe.1.html)
+[nc](https://en.wikipedia.org/wiki/Netcat)
 
 ### Bandit 16 [TODO]
 Official Tips: [Bandit16](https://overthewire.org/wargames/bandit/bandit16.html)
